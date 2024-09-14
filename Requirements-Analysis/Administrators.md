@@ -1,0 +1,5 @@
+- add/ delete and view courses from course catalogue
+- view and update student records, grades, and personal information.
+- assign professors to courses based on their expertise and availability.
+- change status of complaint
+- 

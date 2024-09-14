@@ -1,0 +1,4 @@
+- Pending/Resolved
+- status can be changed only by admin
+- include a description
+- filter complaints based on status or date
