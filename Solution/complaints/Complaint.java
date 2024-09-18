@@ -8,12 +8,14 @@ public class Complaint {
     private String studentEmail; //email of student that raised the complaint
     private String description;
     private String status;  //Status can be "Pending", "Resolved"
+    private String date; //date of complaint (needed to sort the complaints based ond date as aksed)
 
-    public Complaint(String studentEmail, String description) {
+    public Complaint(String studentEmail, String description, String date) {
         this.complaintID = idCounter++;
         this.studentEmail = studentEmail;
         this.description = description;
-        this.status = "Pending";  // New complaints start as pending
+        this.status = "Pending"; //pending as its a new complaint
+        this.date = date;
     }
 
     public int getComplaintID() {
@@ -28,16 +30,16 @@ public class Complaint {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getStatus() {
         return status;
     }
 
+    public String getDate() {
+        return date;
+    }
+
     public boolean isResolved() { //check if the status of the complaint is pending or not
-        if (status == "Pending"){
+        if (status == "Pending") {
             return false;
         }
         return true;
