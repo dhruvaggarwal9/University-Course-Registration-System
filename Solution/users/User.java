@@ -1,8 +1,8 @@
 package users;
 
-import utilities.InputValidator;
+import helper.InputValidator;
 
-public abstract class User {
+public abstract class User implements UserActions{
     private String email;
     private String password;
 
@@ -45,8 +45,12 @@ public abstract class User {
             return false;
         }
     }
-
+    @Override
     public abstract boolean login(String email, String password);
+
+    @Override
     public abstract void logout();
+
+    @Override
     public abstract boolean signup(String email, String password);
 }
