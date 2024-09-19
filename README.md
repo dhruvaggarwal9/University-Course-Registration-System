@@ -5,12 +5,12 @@ Repository Structure
 
 The repository is organized into three key sections:
 
-    **Assignment PDF**
-    This folder contains the original problem statement and assignment guidelines.
+    **Problem Statement PDF**
+    This contains the original problem statement and assignment guidelines.
 
     **Solution Folder**
     The solution folder houses the complete Java-based project implementation of the university system. It includes classes like Student, Professor, Admin, Course, and others, utilizing OOP principles such as encapsulation, inheritance,    po     polymorphism, and abstraction.
 
     **Requirement Analysis Folder**
-    This folder outlines the initial system requirements and contains the UML diagrams, high-level design decisions, and system architecture documentation. It provides insight into the thought process behind the design and implementation.
+    This folder outlines the initial system requirements. It provides insight into my thought process behind the design and implementation.
 
