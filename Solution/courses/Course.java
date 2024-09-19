@@ -49,16 +49,8 @@
             return courseCode;
         }
 
-        public void setCourseCode(String courseCode) {
-            this.courseCode = courseCode;
-        }
-
         public String getTitle() {
             return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
         }
 
         public String getProfessor() {
@@ -74,10 +66,6 @@
 
         public void setProfessor(Professor professor) {
             this.professor = professor;
-        }
-
-        public String getSyllabus() {
-            return syllabus;
         }
 
         public void setSyllabus(String syllabus) {
@@ -104,9 +92,6 @@
             return semester;
         }
 
-        public void setSemester(int semester) {
-            this.semester = semester;
-        }
 
         public List<Course> getPrerequisites() {
             return prerequisites;
@@ -116,24 +101,9 @@
             this.prerequisites = prerequisites;
         }
 
-        public int getEnrollmentLimit() {
-            return enrollmentLimit;
-        }
 
         public void setEnrollmentLimit(int enrollmentLimit) {
             this.enrollmentLimit = enrollmentLimit;
-        }
-
-        public int getCurrentEnrollment() {
-            return currentEnrollment;
-        }
-
-        public void setCurrentEnrollment(int currentEnrollment) {
-            this.currentEnrollment = currentEnrollment;
-        }
-
-        public String getOfficeHours() {
-            return officeHours;
         }
 
         public void setOfficeHours(String officeHours) {
