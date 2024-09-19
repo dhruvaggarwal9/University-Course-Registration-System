@@ -5,14 +5,14 @@ import professor.Professor;
 public class ExampleUsage {
     public static void main(String[] args) {
         UniversitySystem system = new UniversitySystem();
-        
+
         //creating 5 courses of sem1
         system.admin.addCourse(new Course("COM101", "Communication Skills", 4, 1, "Enhancing Communication Skills", "Wednesday 3:00-6:00 PM " + "C101"));
         system.admin.addCourse(new Course("CSE101", "Introduction to Programming", 4, 1, "Basic programming concepts in Python", "Monday, Wednesday 9:00-10:00 AM"));
         system.admin.addCourse(new Course("DES102", "Introduction to HCI", 4, 1, "UI Principles", "Monday, Wednesday 1:00-2:00 PM "  + "C101" ));
         system.admin.addCourse(new Course("ECE111", "Digital Circuits", 4, 1, "Designing circuits", "Tuesday, Thursday 9:00-10:00 AM "  + "C101"));
         system.admin.addCourse(new Course("MTH100", "Linear Algebra", 4, 1, "Linear Algebra basics", "Tuesday, Thursday 10:00-11:00 AM "  + "C101"));
-        
+
         //creating 4 students for exmple for demo
         Student student1 = new Student("dhruv@iiitd.ac.in", "Dhruv@007", "Dhruv");
         student1.signup(student1.getEmail(), student1.getPassword());
@@ -90,7 +90,7 @@ public class ExampleUsage {
 
         //student1 view there schedule
         student1.viewSchedule();
-        
+
         //prof5 viewieng his student list
         System.out.println("\nProfessor 5 viewing students in CSE101:");
         professor5.viewEnrolledStudents("CSE101");
@@ -128,7 +128,7 @@ public class ExampleUsage {
 
         //Students viewing there result
         System.out.println("\nStudent 1 viewing their results:");
-        student1.viewResult(1); 
+        student1.viewResult(1);
 
         System.out.println("\nStudent 2 viewing their results:");
         student2.viewResult(1);
@@ -236,7 +236,7 @@ public class ExampleUsage {
         system.admin.assignGrade(student3, system.courseBook.getCourse("ECO223"), "D");
         system.admin.assignGrade(student4, system.courseBook.getCourse("ECO223"), "A");
 
-        
+
         //students view there result
         System.out.println("\nStudent 1 viewing their results:");
         student1.viewResult(2); // assuming semester 1
