@@ -97,7 +97,7 @@ public class Admin extends User {
 
     public void assignGrade(Student student, Course course, String grade) { //Assigning grade to student
         if (student.getRegisteredCourses().contains(course)) { // Validate that the course is indeed registered by the student
-            student.updateGrade(course, grade);
+            student.updategrade(course, grade);
             System.out.println("Grade " + grade + " has been assigned to " + student.getName() + " for the course: " + course.getTitle());
         } else {
             System.out.println("Student is not registered for the course: " + course.getTitle());
