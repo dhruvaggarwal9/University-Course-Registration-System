@@ -4,7 +4,7 @@ import users.User;
 import courses.Course;
 import courses.CourseBook;
 import complaints.Complaint;
-import utilities.InputValidator;
+import helper.InputValidator;
 import complaints.ComplaintBook;
 
 import java.util.ArrayList;
@@ -127,7 +127,7 @@ public class Student extends User {
 
             if (course.getSemester() == lastSemester) { //finding the course of last semester
                 double gradePoint = convertLettertonumgrade(grade); //letter grade to number
-                
+
                 totalGradePoints += gradePoint * course.getCredits();
                 totalCredits += course.getCredits();
                 System.out.println(course.getTitle() + " (" + course.getCourseCode() + ") - Grade: " + grade);
@@ -200,7 +200,7 @@ public class Student extends User {
             case "F":
                 return 0.0;
             default:
-                return 0.0;  
+                return 0.0;
         }
     }
 
@@ -245,7 +245,7 @@ public class Student extends User {
     public List<Course> getRegisteredCourses() {
         return registeredCourses;
     }
-    
+
     public void viewcomplaintStatus(ComplaintBook complaintBook) {
         List<Complaint> allComplaints = complaintBook.getAllComplaints();
 
