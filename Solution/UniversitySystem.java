@@ -300,7 +300,7 @@ public class UniversitySystem {
     private List<Course> getPrerequisites() {
         List<Course> prerequisites = new ArrayList<>();
         while (true) {
-            String courseCode = manualinput("Enter prerequisite course code (or press enter to finish): ");
+            String courseCode = manualinput("Enter prerequisite course code : ");
             if (courseCode.isEmpty()) break;
             Course course = courseBook.getCourse(courseCode);
             if (course != null) {
@@ -545,14 +545,14 @@ public class UniversitySystem {
         }
     }
 
-    public void resolveComplaint(ComplaintBook complaintBook, Complaint selectedComplaint) {
+    void resolveComplaint(ComplaintBook complaintBook, Complaint selectedComplaint) {
         List<Complaint> complaints = complaintBook.getComplaints("Pending");
 
         if (complaints.isEmpty()) {
             System.out.println("No pending complaints to resolve.");
             return;
         }
-        
+
         complaintBook.updateComplaintStatus(selectedComplaint.getComplaintID(), "SOLVED");
         System.out.println("Complaint marked as resolved.");
     }
