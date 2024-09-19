@@ -9,7 +9,10 @@ The repository is organized into three key sections:
     This contains the original problem statement and assignment guidelines.
 
     **Solution Folder**
-    The solution folder houses the complete Java-based project implementation of the university system. It includes classes like Student, Professor, Admin, Course, and others, utilizing OOP principles such as encapsulation, inheritance,    po     polymorphism, and abstraction.
+    The solution folder houses the complete Java-based project implementation of the university system.
+    The system is composed of several packages classes:
+    User, Student, Professor, Admin, Course, Complaint, CourseCatalogue,UniversitySystem.
+
 
     **Requirement Analysis Folder**
     This folder outlines the initial system requirements. It provides insight into my thought process behind the design and implementation.
