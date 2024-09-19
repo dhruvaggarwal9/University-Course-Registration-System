@@ -5,3 +5,4 @@ public interface UserActions {
     void logout();
     boolean signup(String email, String password);
 }
+ 
