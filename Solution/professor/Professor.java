@@ -3,7 +3,7 @@ package professor;
 import users.User;
 import courses.Course;
 import student.Student;
-import utilities.InputValidator;
+import helper.InputValidator;
 
 import java.util.HashMap;
 import java.util.List;
