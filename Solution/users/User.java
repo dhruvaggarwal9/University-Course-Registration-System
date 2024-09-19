@@ -54,3 +54,4 @@ public abstract class User implements UserActions{
     @Override
     public abstract boolean signup(String email, String password);
 }
+ 
